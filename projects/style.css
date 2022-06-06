@@ -5,8 +5,8 @@
 }
 
 body {
-    background-color: black;
-    color: blue;
+    background-color: yellowgreen;
+    color: black;
     font-size: 2rem;
 }
 
@@ -18,16 +18,39 @@ body {
 }
 
 .watch {
-    border: 5px solid white ;
+    background-color: white;
+    display: flex;
+    border: 5px solid black ;
     padding: 10px;
     border-radius: 5px;
+    align-items: center;
+    justify-content: center;
 }
 
 .buttons {
     display: flex;
-    align-items: center ;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
-    width: 200px;
-    height: 200px;
+    gap: 30px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.pause,.start,.reset {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+
+}
+
+.buttons button:nth-last-child(1) {
+    background-color: #20b380; 
+}
+
+.buttons button:nth-last-child(2) {
+    background-color: #d23332; 
+}
+
+.buttons button:nth-last-child(3) {
+    background-color: #0038ee; 
 }
